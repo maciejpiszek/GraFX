@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="580.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gra.GameController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TabPane maxWidth="1.7976931348623157E308" stylesheets="@Style.css" tabMaxHeight="1000.0" tabMaxWidth="1000.0" tabMinHeight="40.0" tabMinWidth="142.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <tabs>
+          <Tab closable="false" text="P'yŏngyang">
+            <content>
+                  <BorderPane>
+                     <top>
+                        <GridPane maxHeight="48.0" maxWidth="1.7976931348623157E308" minHeight="48.0" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="160.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="335.20001220703125" minHeight="10.0" prefHeight="66.40000610351562" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="480.0" pickOnBounds="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@PjongJangPanorama.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </top>
+                     <bottom>
+                        <GridPane maxHeight="60.0" maxWidth="1.7976931348623157E308" minHeight="60.0" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="346.40001220703124" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="134.39998779296872" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="335.20001220703125" minHeight="10.0" prefHeight="66.40000610351562" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <TextField alignment="CENTER" editable="false" prefHeight="61.0" prefWidth="365.0" styleClass="Limonka" stylesheets="@Style.css" text="YOU HAVE TOTAL AMOUNT OF ♦ :">
+                                 <font>
+                                    <Font name="Arial Bold" size="19.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="totalP" alignment="CENTER" editable="false" prefHeight="61.0" prefWidth="118.0" text="0" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Arial Bold" size="22.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                     </bottom>
+                     <center>
+                        <VBox prefHeight="464.0" prefWidth="481.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="349.0" prefWidth="349.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="131.0" prefWidth="131.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <TextField fx:id="totalIncomeP" alignment="CENTER" editable="false" maxWidth="110.0" prefHeight="47.0" prefWidth="110.0" text="0 ♦ / s" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <TextField fx:id="totalIncomeP11" alignment="CENTER" editable="false" prefHeight="61.0" prefWidth="365.0" styleClass="Pomaranczka" stylesheets="@Style.css" text="TOTAL  CITIES  INCOME:">
+                                       <font>
+                                          <Font name="Arial Bold" size="19.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane fx:id="pGrid3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" text="30 ♦" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <Label fx:id="pLabel30" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="B" visible="false" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pLabel31" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="U" visible="false" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pLabel33" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="-" visible="false" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="pbuy3" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="39.0" prefWidth="52.0" text="100 ♦ " visible="false" GridPane.columnIndex="5">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="pLabel32" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="Y" visible="false" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="p3" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane fx:id="pGrid2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton fx:id="p20" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p21" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p22" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p23" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p24" contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p25" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" styleClass="Pomaranczka" text="30 ♦" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <Label fx:id="pLabel20" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="B" visible="false" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pLabel21" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="U" visible="false" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pLabel23" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="-" visible="false" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="pbuy2" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="39.0" prefWidth="52.0" text="100 ♦ " visible="false" GridPane.columnIndex="5">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="pLabel22" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="Y" visible="false" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="p2" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane fx:id="pGrid1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton fx:id="p10" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p11" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p12" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p13" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p14" contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p15" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" styleClass="Pomaranczka" text="30 ♦" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <Label fx:id="pLabel10" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="B" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pLabel11" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="U" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pLabel13" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="-" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="pbuy1" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="39.0" prefWidth="52.0" text="100 ♦ " GridPane.columnIndex="5">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="pLabel12" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="Y" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="p1" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton fx:id="p00" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" stylesheets="@Style.css" text="10 ♦" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p01" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p02" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p03" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p04" contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Pomaranczka" text="10 ♦" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="p05" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedPjongJang" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" styleClass="Pomaranczka" text="30 ♦" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <TextField fx:id="p0" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" GridPane.columnIndex="6" GridPane.halignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+            </content>
+          </Tab>
+          <Tab closable="false" text="Krasnojarsk">
+               <content>
+                  <BorderPane>
+                     <top>
+                        <GridPane maxHeight="48.0" maxWidth="1.7976931348623157E308" minHeight="48.0" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="160.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="335.20001220703125" minHeight="10.0" prefHeight="66.40000610351562" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@KrasnojarskPanorama.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </top>
+                     <bottom>
+                        <GridPane maxHeight="60.0" maxWidth="1.7976931348623157E308" minHeight="60.0" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="346.40001220703124" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="134.39998779296872" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="335.20001220703125" minHeight="10.0" prefHeight="66.40000610351562" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <TextField alignment="CENTER" editable="false" prefHeight="61.0" prefWidth="365.0" styleClass="Limonka" stylesheets="@Style.css" text="YOU HAVE TOTAL AMOUNT OF ♦ :">
+                                 <font>
+                                    <Font name="Arial Bold" size="19.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="totalK" alignment="CENTER" editable="false" prefHeight="61.0" prefWidth="118.0" text="0" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Arial Bold" size="22.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                     </bottom>
+                     <center>
+                        <VBox prefHeight="464.0" prefWidth="481.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="349.0" prefWidth="349.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="131.0" prefWidth="131.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <children>
+                                    <TextField fx:id="totalIncomeP121" alignment="CENTER" editable="false" prefHeight="61.0" prefWidth="365.0" styleClass="Pomaranczka" stylesheets="@Style.css" text="TOTAL  CITIES  INCOME:">
+                                       <font>
+                                          <Font name="Arial Bold" size="19.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="totalIncomeK" alignment="CENTER" editable="false" maxWidth="110.0" prefHeight="47.0" prefWidth="110.0" text="0 ♦ / s" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane fx:id="kGrid3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" text="30 ♦" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <Label fx:id="kLabel30" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="B" visible="false" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="kLabel31" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="U" visible="false" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="kLabel32" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="-" visible="false" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="kbuy3" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="39.0" prefWidth="52.0" text="100 ♦ " visible="false" GridPane.columnIndex="5">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="kLabel33" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="Y" visible="false" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="k3" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane fx:id="kGrid2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton fx:id="k20" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k21" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k22" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k23" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k24" contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k25" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" text="30 ♦" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <Label fx:id="kLabel20" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="B" visible="false" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="kLabel21" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="U" visible="false" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="kLabel22" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="-" visible="false" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="kbuy2" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="39.0" prefWidth="52.0" text="100 ♦ " visible="false" GridPane.columnIndex="5">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="kLabel23" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="Y" visible="false" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="k2" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane fx:id="kGrid1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton fx:id="k10" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k11" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k12" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k13" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k14" contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k15" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" text="30 ♦" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <Label fx:id="kLabel10" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="B" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="kLabel11" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="U" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="kLabel13" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="-" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="kbuy1" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="39.0" prefWidth="52.0" text="100 ♦ " GridPane.columnIndex="5">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="kLabel12" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="Y" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="k1" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton fx:id="k00" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k01" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k02" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k03" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k04" contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="k05" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedKrasnojarsk" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" text="30 ♦" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <TextField fx:id="k0" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" GridPane.columnIndex="6" GridPane.halignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </content>
+          </Tab>
+            <Tab closable="false" text="Stillwater">
+               <content>
+                  <BorderPane>
+                     <top>
+                        <GridPane maxHeight="48.0" maxWidth="1.7976931348623157E308" minHeight="48.0" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="160.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="335.20001220703125" minHeight="10.0" prefHeight="66.40000610351562" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="480.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@StillwaterPanorama.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </top>
+                     <bottom>
+                        <GridPane maxHeight="60.0" maxWidth="1.7976931348623157E308" minHeight="60.0" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="346.40001220703124" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="134.39998779296872" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="335.20001220703125" minHeight="10.0" prefHeight="66.40000610351562" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <TextField alignment="CENTER" editable="false" prefHeight="61.0" prefWidth="365.0" styleClass="Limonka" stylesheets="@Style.css" text="YOU HAVE TOTAL AMOUNT OF ♦ :">
+                                 <font>
+                                    <Font name="Arial Bold" size="19.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="totalS" alignment="CENTER" editable="false" prefHeight="61.0" prefWidth="118.0" text="0" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Arial Bold" size="22.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                     </bottom>
+                     <center>
+                        <VBox prefHeight="464.0" prefWidth="481.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="349.0" prefWidth="349.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="131.0" prefWidth="131.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <TextField alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <TextField fx:id="totalIncomeP12" alignment="CENTER" editable="false" prefHeight="61.0" prefWidth="365.0" styleClass="Pomaranczka" stylesheets="@Style.css" text="TOTAL  CITIES  INCOME:">
+                                       <font>
+                                          <Font name="Arial Bold" size="19.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="totalIncomeS" alignment="CENTER" editable="false" maxWidth="110.0" prefHeight="47.0" prefWidth="110.0" text="0 ♦ / s" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane fx:id="sGrid3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" text="10 ♦" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" text="30 ♦" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <Label fx:id="sLabel30" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="B" visible="false" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sLabel31" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="U" visible="false" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sLabel32" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="-" visible="false" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="sbuy3" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="39.0" prefWidth="52.0" text="100 ♦ " visible="false" GridPane.columnIndex="5">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="sLabel33" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="Y" visible="false" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="s3" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane fx:id="sGrid2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton fx:id="s20" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s21" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s22" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s23" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s24" contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s25" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" styleClass="Limonka" text="30 ♦" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <Label fx:id="sLabel20" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="B" visible="false" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sLabel21" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="U" visible="false" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sLabel22" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="-" visible="false" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="sbuy2" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="39.0" prefWidth="52.0" text="100 ♦ " visible="false" GridPane.columnIndex="5">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="sLabel23" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="Y" visible="false" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="s2" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane fx:id="sGrid1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton fx:id="s10" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s11" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s12" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s13" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s14" contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s15" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" styleClass="Limonka" text="30 ♦" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <Label fx:id="sLabel10" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="B" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sLabel11" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="U" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sLabel13" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="-" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="sbuy1" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="39.0" prefWidth="52.0" text="100 ♦ " GridPane.columnIndex="5">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="sLabel12" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="63.0" text="Y" GridPane.columnIndex="3">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="s1" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" visible="false" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" prefWidth="480.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="68.57" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ToggleButton fx:id="s00" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s01" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s02" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s03" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s04" contentDisplay="CENTER" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100;" styleClass="Limonka" text="10 ♦" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                                    <ToggleButton fx:id="s05" minHeight="40.0" minWidth="55.0" mnemonicParsing="false" onAction="#setSelectedStillwater" prefHeight="20.0" style="-fx-background-radius: 100; -fx-text-fill: red;" styleClass="Limonka" text="30 ♦" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                                    <TextField fx:id="s0" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="40.0" prefWidth="40.0" text="0 ♦ / s" GridPane.columnIndex="6" GridPane.halignment="CENTER" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </GridPane>
+                              <GridPane prefHeight="21.0" prefWidth="474.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </content>
+            </Tab>
+        </tabs>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TabPane>
+   </children>
+</GridPane>

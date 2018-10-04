@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<GridPane prefHeight="520.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gra.SelectScreen">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="249.99997558593748" minHeight="10.0" prefHeight="23.200004196166994" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="497.59999580383294" minHeight="10.0" prefHeight="497.59999580383294" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <StackPane fx:id="flowPane" GridPane.rowIndex="1">
+         <children>
+            <ImageView fitHeight="509.0" fitWidth="488.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#startGame" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="@Slave.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+   </children>
+</GridPane>
